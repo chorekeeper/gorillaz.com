@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>О Gorillaz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="./images/gorillaz-logo.png" alt="Gorillaz Logo" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">О нас</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <h1 class="text-center mb-4">История Gorillaz</h1>
+
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="./images/Gorillaz.landscape.webp" class="img-fluid rounded" alt="Russel Hobbs">
+      </div>
+      <div class="col-md-6">
+        <p>
+          Gorillaz были созданы в 1998 году музыкантом Дэймоном Албарном (Blur) и художником Джейми Хьюлеттом.
+          Идея — объединить анимацию и музыку, создав «виртуальную группу» из четырёх персонажей.
+        </p>
+        <p>
+          Их дебютный альбом (2001) стал международным хитом, а последующие релизы, такие как *Demon Days* и *Plastic Beach*, 
+          получили признание критиков и миллионные продажи.
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="accordion mb-5" id="bandAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            Кто такие участники?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#bandAccordion">
+          <div class="accordion-body">
+            <ul>
+              <li><strong>2D</strong> — вокал, клавишные</li>
+              <li><strong>Murdoc Niccals</strong> — бас-гитара</li>
+              <li><strong>Noodle</strong> — гитара, бэк-вокал</li>
+              <li><strong>Russel Hobbs</strong> — ударные, духовный лидер</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Alert -->
+    <div class="alert alert-info text-center">
+      Gorillaz — не просто группа, а целая вселенная, включающая клипы, комиксы, игры и даже NFT!
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>© 2025 Gorillaz</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
